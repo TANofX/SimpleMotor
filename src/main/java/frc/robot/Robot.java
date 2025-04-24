@@ -59,6 +59,6 @@ public class Robot extends TimedRobot {
     double voltagePercentage = m_joystick.getLeftX();
     voltagePercentage = MathUtil.clamp(voltagePercentage, MIN_SPEED, MAX_SPEED);
 
-    m_motor.set(m_joystick.getLeftX());
+    m_motor.set(voltagePercentage);
   }
 }
